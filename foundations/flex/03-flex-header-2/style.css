@@ -2,6 +2,11 @@
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
+/* I under TOP solution, they made more flex containers.  I went a different route and used auto margin to get 
+
+the notification box to go the right side. I had to do extra steps to get padding and margin to match at either side
+of page */
+
 body {
   margin: 0;
   background: #eee;
@@ -12,6 +17,14 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  /* added flebox container here */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding-left: 16px;
+  
+
 }
 
 .profile-image {
@@ -45,4 +58,22 @@ a {
 
 ul {
   list-style-type: none;
+  /* added flebox container here */
+  display: flex;
+  /* added auto margin to push link list to the left (not sure why margin-right pushed it left) */
+  margin-right: auto;
+  gap: 12px;
+  padding: 0;
+
+}
+
+.rightside {
+  /* added flebox container here */
+  display: flex;
+  gap: 16px;
+
+}
+
+.profile-image {
+  margin-right: 16px;
 }
