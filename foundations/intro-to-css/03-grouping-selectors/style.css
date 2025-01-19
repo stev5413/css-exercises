@@ -1,0 +1,17 @@
+.first {
+    background-color: black;
+    color: white;
+}
+
+.second {
+    background-color: yellow;
+    color: black;
+}
+
+
+/*there is no hierarchy between the elements so just separate them with a ,*/
+.first,.second {
+    font-size: 28px;
+    font-family:  Helvetica, Times New Roman, sans-serif;
+}
+   
